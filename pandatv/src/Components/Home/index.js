@@ -52,21 +52,25 @@ class Home extends Component {
       padding: 0;
     `
     const LatestContainer = styled.div `
-      width: 100%;
+      width: 100vw;
       display: flex;
       height: 25vh;
       background-color: tomato;
+      padding: 0;
+      margin: 0;
     `
     const FullHeightCon = styled.div `
-      width: 100%;
+      width: 100vw;
       height: 100vh;
+      padding: 0;
+      margin: 0;
     `
 
 
     return (
-      <div>
+      <div style={{margin:0,padding: 0}}>
         <Overlay className="row overLay">
-          <div className="col-xs-12 w-100 justify-content-between d-flex">
+          <div className="col-xs-12 w-100 justify-content-between d-flex p-0 m-0">
             <div className="sideBanner "><p>Latest Radio</p></div>
             <h2 className="pageTitle ">Panda TV</h2>
             <div className="">
@@ -84,8 +88,8 @@ class Home extends Component {
           </div>
         </div>
           </div>
-          <div className="col-xs-12 w-100">
-          <LatestContainer>
+          <div className="col-xs-12 w-100 p-0 m-0">
+            <LatestContainer>
             <div className="col-4 d-flex flex-column justify-content-around">
               <div className="imgWrapper"><img src={latestNews} alt="news"key={uuid.v4()}/></div>
             </div>

@@ -1,0 +1,25 @@
+.videoContainer {
+
+}
+.videoContainer video {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+.pageTitle {
+  font-size: 72px;
+  color: #fff;
+}
+.sideBanner {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 2rem;
+  font-size: 20px;
+  background-color: #FE4A49;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}

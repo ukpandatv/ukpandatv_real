@@ -22,10 +22,7 @@
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
 }
-.trial {
-  height: 200px;
-  background-color: tomato;
-}
+
 .videoWrapper {
   height: 100%;
   background-color: #FE4A49
@@ -38,12 +35,40 @@
   background-color: #FE4A49
 }
 .videoTitle {
-  font-size: 45px;
+  font-size: 36px;
 }
+
 .videoDescription {
   font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .col {
   padding: 0 !important;
   margin: 0 !important;
 }
+#soundCloudPlayer {
+  width: 40vw;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+.moreButton {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.moreButton:hover {
+  text-decoration: none;
+}
+.aboutBg {
+  background: url('../../Assets/img/Mother.jpg')no-repeat center center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.footerIcon {width: 40px;}

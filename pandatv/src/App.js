@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Home from "./Components/Home/";
+import Footer from "./Components/Home/Footer.js";
+import Contact from "./Components/Home/Contact.js";
+import { Router, Route, Switch } from "react-router";
 
-import Home from './Components/Home/';
-import Footer from './Components/Home/Footer.js';
+// import Footer from './Components/Home/Footer.js';
+// import Contact from './Components/contact.js';
 
-import styled from 'styled-components';
 import './App.css';
 
 
@@ -15,11 +18,13 @@ export default class App extends Component {
 
     }
   }
+
   render(){
 
   return (
     <div className="App">
       <Home></Home>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );

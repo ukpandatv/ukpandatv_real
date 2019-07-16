@@ -12,16 +12,15 @@ const AboutSection = () => {
   return (
     <FullHeightCon >
       <div className="col-sm-12 aboutBg panel justify-content-end align-items-center h-100 d-flex flex-column text-center p-3">
-      <h3>About Us</h3>
-      <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque
-      facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur
-      nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo!
-      </p>
+        <h3>About Us</h3>
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque
+        facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur
+        nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo!
+        </p>
       </div>
     </FullHeightCon>
-
     )
   }
   export default AboutSection;

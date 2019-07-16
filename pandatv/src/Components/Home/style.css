@@ -27,12 +27,16 @@
   height: 100%;
   background-color: #FE4A49
 }
+
 .imgWrapper img {
   max-width:100%;
   max-height:100%;
 }
 .tomatoBg{
   background-color: #FE4A49
+}
+.tomatoText {
+  color: #FE4A49;
 }
 .videoTitle {
   font-size: 36px;
@@ -71,4 +75,33 @@
   -o-background-size: contain;
   background-size: contain;
 }
+.contactBg {
+  background: url('../../Assets/img/contact-bg.jpg')no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .footerIcon {width: 40px;}
+.contactCard {
+  height: 70px;
+  width: 240px;
+  -webkit-box-shadow: 8px 9px 5px -8px rgba(145,145,145,1);
+  -moz-box-shadow: 8px 9px 5px -8px rgba(145,145,145,1);
+  box-shadow: 8px 9px 5px -8px rgba(145,145,145,1);
+}
+.contactCard:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+footer {
+  height:10vh;
+  width: 100vw;
+}
+.contactBanner {
+  height: auto;
+  max-height: 600px;
+}

@@ -75,6 +75,15 @@
   -o-background-size: contain;
   background-size: contain;
 }
+.videoBg {
+  background: url('../../Assets/img/contact-bg.jpg')no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .contactBg {
   background: url('../../Assets/img/contact-bg.jpg')no-repeat center center;
   background-size: cover;
@@ -83,6 +92,43 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.tomatoText {
+  color: #FE4A49;
+  padding: 0 5px;
+  text-decoration: none;
+}
+.category, .category:visited {
+  text-decoration: none;
+  position: relative;
+  color: #FE4A49;
+  cursor: pointer;
+}
+.category:after, .category:visited:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #FE4A49;
+  transition: .5s;
+}
+.category:hover:after, .category:visited:hover:after {
+  width: 100%;
+  color: black;
+}
+.category {
+  font-size: 20px;
+  padding-right: 2rem;
+  font-weight: 300;
+}
+.category:hover {
+  font-weight: 700;
+  color: #FE4A49;
+}
+
+
+
 .footerIcon {width: 40px;}
 .contactCard {
   height: 70px;
@@ -104,4 +150,8 @@ footer {
 .contactBanner {
   height: auto;
   max-height: 600px;
+}
+#nav_bar {
+  z-index: 3;
+  padding: 0;
 }

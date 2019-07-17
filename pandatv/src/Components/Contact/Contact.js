@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import styled from 'styled-components';
 import GateImg from '../../Assets/img/paul-gilmore-iMtJT_NEWp8-unsplash.jpg';
 import instaredlogo from '../../Assets/icons/instaredlogo.png';
@@ -15,13 +15,7 @@ const Contact = () => {
     <div>
       <FullHeightCon>
         <div className="col-sm-12 contactBg panel justify-content-end align-items-center h-100 d-flex flex-column text-center p-3">
-          <h3>About Us</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque
-            facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur
-            nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Omnis aspernatur nam rerum blanditiis reprehenderit odit unde doloremque facilis magnam, deleniti cupiditate labore dicta dolore libero officiis nihil cumque doloribus explicabo!
-          </p>
+          <h1 className="text-white">About Us</h1>
         </div>
       </FullHeightCon>
       <FullHeightCon className="row d-flex m-0 p-0">

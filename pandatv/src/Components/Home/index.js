@@ -61,54 +61,53 @@ class Home extends Component {
       margin: 0;
     `
 
-
     return (
       <div style={{margin:0,padding: 0}}>
         <FullHeightCon >
-        <Overlay className="row overLay">
-          <div className="col-xs-12 w-100 justify-content-between d-flex p-0 m-0">
-            <div className="sideBanner "><p>Latest Radio</p></div>
-            <h2 className="pageTitle ">Panda TV</h2>
-            <div className="">
-              <div className="ih-item circle colored effect1 hideClass">
-            <a>
-              <div className="spinner"></div>
-              <div className="img"><img src={Waterfall} alt="img" /></div>
-              <div className="info"><div className="info-back"><h3>More Videos</h3></div>
-              </div>
-            </a>
-          </div>
+          <Overlay className="row overLay">
+            <div className="col-xs-12 w-100 justify-content-between d-flex p-0 m-0">
+              <div className="sideBanner "><p>Latest Radio</p></div>
+              <h2 className="pageTitle ">Panda TV</h2>
+              <div className="">
+                <div className="ih-item circle colored effect1 hideClass">
+              <a>
+                <div className="spinner"></div>
+                <div className="img"><img src={Waterfall} alt="img" /></div>
+                <div className="info"><div className="info-back"><h3>More Videos</h3></div>
+                </div>
+              </a>
             </div>
-          </div>
-          <div className="col-xs-12 w-100 p-0 m-0">
-            <LatestContainer>
-              <div className="col-4 d-flex flex-column justify-content-around">
-                <div className="imgWrapper d-flex"><img src={latestNews} alt="news"key={uuid.v4()}/></div>
               </div>
-            <div className="col-8 d-flex flex-column justify-content-around">
-              {this.state.latestNews.map((news,i) => {
-                return (
-                  <li
-                    className="list-unstyled text-white h5"
-                    key={uuid.v4()}
-                    >{news.title}
-                    <br></br>
-                    <span className="pr-2 font-weight-bold"key={uuid.v4()}>{news.author}</span>
-                    <span className="font-weight-light"key={uuid.v4()}>{news.date}</span>
-                  </li> )}
-              )}
             </div>
-          </LatestContainer>
+            <div className="col-xs-12 w-100 p-0 m-0">
+              <LatestContainer>
+                <div className="col-4 d-flex flex-column justify-content-around">
+                  <div className="imgWrapper d-flex"><img src={latestNews} alt="news"key={uuid.v4()}/></div>
+                </div>
+              <div className="col-8 d-flex flex-column justify-content-around">
+                {this.state.latestNews.map((news,i) => {
+                  return (
+                    <li
+                      className="list-unstyled text-white h5"
+                      key={uuid.v4()}
+                      >{news.title}
+                      <br></br>
+                      <span className="pr-2 font-weight-bold"key={uuid.v4()}>{news.author}</span>
+                      <span className="font-weight-light"key={uuid.v4()}>{news.date}</span>
+                    </li> )}
+                )}
+              </div>
+            </LatestContainer>
+            </div>
+          </Overlay>
+          <div className="videoWrapper">
+          <div className="videoContainer">
+            <video id="background-video" loop muted>
+              <source src={Video} type="video/mp4" />
+              <source src={Video} type="video/ogg" />
+            </video>
           </div>
-        </Overlay>
-        <div className="videoWrapper">
-        <div className="videoContainer">
-          <video id="background-video" loop muted>
-            <source src={Video} type="video/mp4" />
-            <source src={Video} type="video/ogg" />
-          </video>
         </div>
-      </div>
       </FullHeightCon>
         <LatestVideos></LatestVideos>
         <RadioSection></RadioSection>

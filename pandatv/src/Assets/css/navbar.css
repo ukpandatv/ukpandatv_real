@@ -1,0 +1,7 @@
+#nav_bar {
+  z-index: 3;
+  padding: 0;
+}
+.desktopNav {
+  background-color: red;
+}

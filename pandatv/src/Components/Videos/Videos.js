@@ -9,7 +9,8 @@ class Videos extends Component {
       "videos" : [],
       "isLoading" : true,
       "error" : "",
-      "categories": ["food","travel","living","europe","london","china"]
+      "categories": ["food","travel","living","europe","london","china"],
+      "isVideoBg": false,
 
     }
   }
@@ -54,7 +55,7 @@ class Videos extends Component {
               { this.state.videos.map((video,i) => {
                   return (
                     <div className="col-md-4" key={uuid.v4()}>
-                      <div className="card">
+                      <div className="card m-2">
                         <div className="card-image">
                           <div className="embed-responsive embed-responsive-16by9">
                             <video controls poster={video.thumbnailUrl} type="video/mp4">
@@ -65,7 +66,7 @@ class Videos extends Component {
                         </div>
                         <div className="card-content">
                           <div className="card-title text-center">
-                            <h5 className="pt-2 tomatoText">{video.title}</h5>
+                            <h5 className="pt-2 tomatoText">{video.title.slice(0,20)}</h5>
                             <p className="smallClass tomatoText">Not sure about this content</p>
                           </div>
                         </div>

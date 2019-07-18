@@ -11,6 +11,10 @@
   font-size: 72px;
   color: #fff;
 }
+.newsImage {
+  width: auto;
+  height: 400px;
+}
 .sideBanner {
   transform: rotate(90deg);
   transform-origin:left;
@@ -85,6 +89,14 @@
 }
 .radioBg {
   background: url('../../Assets/img/Radio.jpg')no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.newsBg {
+  background: url('../../Assets/img/panda.jpg')no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

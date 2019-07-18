@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../Assets/css/navbar.css';
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <nav id="nav_bar" className="dekstopNav navbar navbar-expand-lg position-absolute customNavigation justify-content-center" style={{width: '100%', top: '5%', zIndex: 3}}>
       <div className="p-2 bg-white menuClass menuText d-flex align-items-center" style={{borderRadius: '20px'}}>

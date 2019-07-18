@@ -6,18 +6,14 @@ import { BrowserRouter as  Router, Route, Switch, Link,} from "react-router-dom"
 import Navigation from './Components/Navbar.js';
 import Videos from './Components/Videos/Videos.js';
 import Radio from './Components/Radio/Radio.js';
+import News from './Components/News/News.js';
 import './App.css';
-
 
 
 export default class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      "videos": [],
-      "isLoading": true,
-      "error": '',
-      "categories": ["food","travel","living","europe","london","china"]
     }
   }
 
@@ -33,6 +29,7 @@ export default class App extends Component {
             <Route path='/Contact' component={Contact} />
             <Route path='/Videos' component={Videos} />
             <Route path='/Radio' component={Radio} />
+            <Route path='/News' component={News} />
           </Switch>
           <Footer></Footer>
         </div>

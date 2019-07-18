@@ -5,7 +5,7 @@ import Contact from "./Components/Contact/Contact.js";
 import { BrowserRouter as  Router, Route, Switch, Link,} from "react-router-dom";
 import Navigation from './Components/Navbar.js';
 import Videos from './Components/Videos/Videos.js';
-
+import Radio from './Components/Radio/Radio.js';
 import './App.css';
 
 
@@ -16,7 +16,8 @@ export default class App extends Component {
     this.state = {
       "videos": [],
       "isLoading": true,
-      "error": ''
+      "error": '',
+      "categories": ["food","travel","living","europe","london","china"]
     }
   }
 
@@ -24,15 +25,16 @@ export default class App extends Component {
 
   return (
     <div className="App">
-      <Router >
+      <Router>
         <div>
-        <Navigation></Navigation>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/Contact' component={Contact} />
-          <Route path='/Videos' component={Videos} />
-        </Switch>
-        <Footer></Footer>
+          <Navigation></Navigation>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/Contact' component={Contact} />
+            <Route path='/Videos' component={Videos} />
+            <Route path='/Radio' component={Radio} />
+          </Switch>
+          <Footer></Footer>
         </div>
       </Router>
     </div>

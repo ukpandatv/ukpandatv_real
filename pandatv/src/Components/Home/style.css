@@ -83,7 +83,14 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
+.radioBg {
+  background: url('../../Assets/img/Radio.jpg')no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .contactBg {
   background: url('../../Assets/img/contact-bg.jpg')no-repeat center center;
   background-size: cover;

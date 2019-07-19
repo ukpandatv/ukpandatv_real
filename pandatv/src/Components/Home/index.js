@@ -68,8 +68,8 @@ class Home extends Component {
             <div className="col-xs-12 w-100 justify-content-between d-flex p-0 m-0">
               <div className="sideBanner "><p>Latest Radio</p></div>
               <h2 className="pageTitle ">Panda TV</h2>
-              <div className="">
-                <div className="ih-item circle colored effect1 hideClass">
+              <div className=" hoverHere">
+                <div className="ih-item circle colored effect1 hideClass rightToBottom">
               <a>
                 <div className="spinner"></div>
                 <div className="img"><img src={Waterfall} alt="img" /></div>
@@ -79,7 +79,7 @@ class Home extends Component {
             </div>
               </div>
             </div>
-            <div className="col-xs-12 w-100 p-0 m-0">
+            <div className="col-xs-12 w-100 p-0 m-0" style={{'zIndex':3}}>
               <LatestContainer>
                 <div className="col-4 d-flex flex-column justify-content-around">
                   <div className="imgWrapper d-flex"><img src={latestNews} alt="news"key={uuid.v4()}/></div>

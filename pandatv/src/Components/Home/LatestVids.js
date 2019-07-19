@@ -36,6 +36,7 @@ class LatestVideos extends Component {
       overflow: hidden;
       margin: 0;
       padding: 0;
+
     `
     const FullHeightCon = styled.div `
       width: 100vw;
@@ -57,15 +58,15 @@ class LatestVideos extends Component {
             <div className="imgWrapper pt-2"><img src={latestVideo} alt="videos"key={uuid.v4()}/></div>
               {this.state.latestVideos.map((video, i) => {
                 return (
-                  <FullHeightCon className="d-flex flex-column justify-content-around position-relative">
-                    <div className="d-flex flex-column pl-md-4">
+                  <div className="latestWrapper d-flex flex-column justify-content-around ">
+                    <div className="d-flex flex-column pl-md-4 ">
                       <p className="text-capitalize videoTitle"key={uuid.v4()}>{video.title}</p>
                       <span className="pr-2 font-weight-bold"key={uuid.v4()} >{video.author}</span>
                       <span className="font-weight-light"key={uuid.v4()}>{video.date}</span>
                     </div>
                     <p className="videoDescription pl-md-4"key={uuid.v4()} >{video.description}</p>
                     <div><a className="moreButton" href={video.url}key={uuid.v4()}>More video >>></a></div>
-                  </FullHeightCon>
+                  </div>
                 )
               })}
           </div>

@@ -65,7 +65,7 @@ class Home extends Component {
       <div style={{margin:0,padding: 0}}>
         <FullHeightCon >
           <Overlay className="row overLay">
-            <div className="col-xs-12 w-100 justify-content-between d-flex p-0 m-0">
+            <div className=" d-flex p-0 m-0 nestedOverlay">
               <div className="sideBanner "><p>Latest Radio</p></div>
               <h2 className="pageTitle ">Panda TV</h2>
               <div className=" hoverHere">
@@ -79,16 +79,16 @@ class Home extends Component {
             </div>
               </div>
             </div>
-            <div className="col-xs-12 w-100 p-0 m-0" style={{'zIndex':3}}>
+            <div className="col-xs-12 w-100 p-0 m-0 " style={{'zIndex':3}}>
               <LatestContainer>
                 <div className="col-4 d-flex flex-column justify-content-around">
                   <div className="imgWrapper d-flex"><img src={latestNews} alt="news"key={uuid.v4()}/></div>
                 </div>
-              <div className="col-8 d-flex flex-column justify-content-around">
+              <div className="col-8 d-flex flex-column justify-content-around ">
                 {this.state.latestNews.map((news,i) => {
                   return (
                     <li
-                      className="list-unstyled text-white h5"
+                      className="list-unstyled text-white h5 liGroup"
                       key={uuid.v4()}
                       >{news.title}
                       <br></br>
@@ -102,7 +102,7 @@ class Home extends Component {
           </Overlay>
           <div className="videoWrapper">
           <div className="videoContainer">
-            <video id="background-video" loop muted>
+            <video id="background-video" loop autoPlay muted>
               <source src={Video} type="video/mp4" />
               <source src={Video} type="video/ogg" />
             </video>

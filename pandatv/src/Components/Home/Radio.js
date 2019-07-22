@@ -15,7 +15,7 @@ const RadioSection = () => {
   return (
     <FullHeightCon className="tomatoBg">
       <div className="row h-100 nogutter no-gutters">
-        <div className="col-sm-12 d-flex m-0 p-0 justify-content-between align-items-start px-md-3 py-md-3">
+        <div className="col-sm-12 d-md-flex m-0 p-0 justify-content-between align-items-start px-md-3 py-md-3">
           <div className="imgWrapper"><img src={latestRadio} alt="news"key={uuid.v4()}/></div>
           <div style={{zIndex:2}}>
             <a className="moreButton" href="#"key={uuid.v4()}>More Radio >>></a>

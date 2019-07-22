@@ -13,17 +13,21 @@ class Videos extends Component {
       "isVideoBg": false,
 
     }
+    this.API_KEY = process.env.REACT_APP_WEATHER_API_KEY
+
   }
   componentDidMount(){
     this.callVideos();
   }
   callVideos = () => {
     // save 20 items in state
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    fetch(`http://chino.ibasezero.com:47128/api/get/video/1${this.API_KEY}`,)
       .then(response => response.json())
       .then(data => {this.setState({videos : data.slice(0,20), isLoading: false })})
       .catch(error => this.setState({error,isLoading: false}))
-  }
+    }
+
+
   render() {
     const FullHeightCon = styled.div `
       width: 100vw;

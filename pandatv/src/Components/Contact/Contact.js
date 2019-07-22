@@ -18,7 +18,7 @@ const Contact = () => {
           <h1 className="text-white">About Us</h1>
         </div>
       </FullHeightCon>
-      <FullHeightCon className="row d-flex m-0 p-0">
+      <FullHeightCon className="row d-flex m-0 p-0 h-100">
         <div className="col-sm-7 d-flex flex-column justify-content-center">
           <div>
             <div className="d-flex flex-column p-4"style={{}}>

@@ -39,10 +39,10 @@ class Home extends Component {
       left: 0px;
       top: 0px;
       height: 100vh;
-      width: 100vw;
+      width: 100;
       z-index: 2;
       font-size: 36px;
-      overflow: hidden;
+      // overflow: hidden;
       margin: 0;
       padding: 0;
     `
@@ -65,19 +65,19 @@ class Home extends Component {
       <div style={{margin:0,padding: 0}}>
         <FullHeightCon >
           <Overlay className="row overLay">
-            <div className=" d-flex p-0 m-0 nestedOverlay">
-              <div className="sideBanner "><p>Latest Radio</p></div>
-              <h2 className="pageTitle ">Panda TV</h2>
+            <div className="col-sm-4  sideBanner"><span className="bannerStyle">Latest Radio</span></div>
+            <div className="pageTitle text-center col-sm-4">Panda TV</div>
+            <div className="col-md-4 d-flex justify-content-end align-items-end rightToBottom">
               <div className=" hoverHere">
-                <div className="ih-item circle colored effect1 hideClass rightToBottom">
-              <a>
-                <div className="spinner"></div>
-                <div className="img"><img src={Waterfall} alt="img" /></div>
-                <div className="info"><div className="info-back"><h3>More Videos</h3></div>
-                </div>
-              </a>
-            </div>
+              <div className="ih-item circle colored effect1 hideClass rightToBottom">
+            <a>
+              <div className="spinner"></div>
+              <div className="img"><img src={Waterfall} alt="img" /></div>
+              <div className="info"><div className="info-back"><h3>More Videos</h3></div>
               </div>
+            </a>
+          </div>
+            </div>
             </div>
             <div className="col-xs-12 w-100 p-0 m-0 " style={{'zIndex':3}}>
               <LatestContainer>

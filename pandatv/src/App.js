@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Home from "./Components/Home/";
-import Footer from "./Components/Home/Footer.js";
+
 import Contact from "./Components/Contact/Contact.js";
 import { BrowserRouter as  Router, Route, Switch, Link,} from "react-router-dom";
 import Navigation from './Components/Navbar.js';
@@ -8,6 +8,7 @@ import Videos from './Components/Videos/Videos.js';
 import Radio from './Components/Radio/Radio.js';
 import News from './Components/News/News.js';
 import './App.css';
+import ReactPageScroller from 'react-page-scroller';
 
 
 export default class App extends Component {
@@ -31,7 +32,6 @@ export default class App extends Component {
             <Route path='/Radio' component={Radio} />
             <Route path='/News' component={News} />
           </Switch>
-          <Footer></Footer>
         </div>
       </Router>
     </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-// import ReactPageScroller from "react-page-scroller";
+import ReactPageScroller from "react-page-scroller";
 import uuid from 'uuid';
 import Video  from '../Home/Llama.mp4';
 import './style.css';
@@ -63,6 +63,8 @@ class Home extends Component {
 
     return (
       <div style={{margin:0,padding: 0}}>
+      <ReactPageScroller ref={c => this.reactPageScroller = c}>
+
         <FullHeightCon >
           <Overlay className="row overLay">
             <div className="col-sm-4  sideBanner"><span className="bannerStyle">Latest Radio</span></div>
@@ -112,6 +114,7 @@ class Home extends Component {
         <LatestVideos></LatestVideos>
         <RadioSection></RadioSection>
         <AboutSection></AboutSection>
+        </ReactPageScroller>
     </div>
     )
   }

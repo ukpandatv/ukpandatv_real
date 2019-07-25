@@ -39,8 +39,8 @@ class Videos extends Component {
     return (
       <div>
         <FullHeightCon>
-          <div className="col-sm-12 videoBg panel justify-content-end align-items-center h-100 d-flex flex-column text-center m-0 p-0">
-            <h3>Videos</h3>
+          <div className="col-sm-12 videoBg panel justify-content-center align-items-center h-100 d-flex flex-column text-center m-0 p-0">
+            <h1 className="text-white pageTitle">Videos</h1>
             <p></p>
           </div>
         </FullHeightCon>

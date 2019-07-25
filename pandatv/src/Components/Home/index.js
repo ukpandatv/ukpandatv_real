@@ -68,7 +68,11 @@ class Home extends Component {
 
         <FullHeightCon >
           <Overlay className="row overLay">
-            <div className="col-sm-4  sideBanner"><span className="bannerStyle">Latest Radio</span></div>
+            <div className="col-sm-4 pl-0 sideBanner">
+            <Link className="bannerStyle" to={'/radio'}>Latest Radio</Link>
+
+              {/* <span className="bannerStyle">Latest Radio</span> */}
+            </div>
             <div className="pageTitle text-center col-sm-4">Panda TV</div>
             <div className="col-md-4 d-flex justify-content-end align-items-end rightToBottom">
               <div className=" hoverHere">
@@ -77,7 +81,7 @@ class Home extends Component {
               <div className="spinner"></div>
               <div className="img"><img src={Waterfall} alt="img" /></div>
               <div className="info d-flex justify-content-center align-items-center"><div className="info-back">
-              <Link to={'/videos'} className="text-center text-white">More Videos</Link>
+              <Link to={'/videos'} key={uuid.v4()}className="text-center text-white">More Videos</Link>
                 </div>
               </div>
             </a>

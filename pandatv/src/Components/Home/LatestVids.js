@@ -60,7 +60,7 @@ class LatestVideos extends Component {
             <div className="imgWrapper pt-2"><img src={latestVideo} alt="videos"key={uuid.v4()}/></div>
               {this.state.latestVideos.map((video, i) => {
                 return (
-                  <div className="latestWrapper d-flex flex-column justify-content-around ">
+                  <div key={uuid.v4()}className="latestWrapper d-flex flex-column justify-content-around ">
                     <div className="d-flex flex-column pl-md-4 ">
                       <p className="text-capitalize videoTitle"key={uuid.v4()}>{video.title}</p>
                       <span className="pr-2 font-weight-bold"key={uuid.v4()} >{video.author}</span>

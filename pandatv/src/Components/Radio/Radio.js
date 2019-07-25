@@ -34,7 +34,7 @@ class Radio extends Component {
     <div>
       <FullHeightCon>
         <div className="col-sm-12 radioBg panel justify-content-center align-items-center h-100 d-flex flex-column text-center m-0 p-0">
-          <h1 className="text-white">Radio</h1>
+          <h1 className="text-white pageTitle">Radio</h1>
           <p></p>
         </div>
       </FullHeightCon>

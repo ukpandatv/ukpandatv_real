@@ -14,8 +14,8 @@ const Contact = () => {
   return (
     <div>
       <FullHeightCon>
-        <div className="col-sm-12 contactBg panel justify-content-end align-items-center h-100 d-flex flex-column text-center p-3">
-          <h1 className="text-white">About Us</h1>
+        <div className="col-sm-12 contactBg panel justify-content-center align-items-center h-100 d-flex flex-column text-center p-3">
+          <h1 className="text-white pageTitle">Contact</h1>
         </div>
       </FullHeightCon>
       <FullHeightCon className="row d-flex m-0 p-0 h-100">

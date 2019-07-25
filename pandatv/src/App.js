@@ -10,6 +10,8 @@ import News from './Components/News/News.js';
 import './App.css';
 import ReactPageScroller from 'react-page-scroller';
 
+// Multi language solution. Chinese translation required.
+// https://medium.com/@jishnu61/6-easy-steps-to-localize-your-react-application-internationalization-with-i18next-8de9cc3a66a1
 
 export default class App extends Component {
   constructor(props){

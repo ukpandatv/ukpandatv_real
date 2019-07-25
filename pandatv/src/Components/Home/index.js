@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactPageScroller from "react-page-scroller";
+import { Link } from "react-router-dom";
 import uuid from 'uuid';
 import Video  from '../Home/Llama.mp4';
 import './style.css';
@@ -75,7 +76,9 @@ class Home extends Component {
             <a>
               <div className="spinner"></div>
               <div className="img"><img src={Waterfall} alt="img" /></div>
-              <div className="info"><div className="info-back"><h3>More Videos</h3></div>
+              <div className="info d-flex justify-content-center align-items-center"><div className="info-back">
+              <Link to={'/videos'} className="text-center text-white">More Videos</Link>
+                </div>
               </div>
             </a>
           </div>

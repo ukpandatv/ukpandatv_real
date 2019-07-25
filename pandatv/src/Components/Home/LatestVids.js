@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import uuid from 'uuid';
 import latestVideo from '../../Assets/img/LatestVideo.png';
 import Video  from '../Home/Llama.mp4';
+import { Link } from "react-router-dom";
+
 
 
 class LatestVideos extends Component {
@@ -65,7 +67,11 @@ class LatestVideos extends Component {
                       <span className="font-weight-light videoDate"key={uuid.v4()}>{video.date}</span>
                     </div>
                     <p className="videoDescription pl-md-4"key={uuid.v4()} >{video.description}</p>
-                    <div><a className="moreButton" href={video.url}key={uuid.v4()}>More video >>></a></div>
+                    <div>
+                      <Link to={'/videos'} key={uuid.v4()} className="moreButton">More video >>></Link>
+
+                      {/* <a className="moreButton" href={Video}key={uuid.v4()}>More video >>></a> */}
+                    </div>
                   </div>
                 )
               })}

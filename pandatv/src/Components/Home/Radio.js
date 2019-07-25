@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import './style.css';
 import latestRadio from '../../Assets/img/LatestRadio.png';
 import uuid from 'uuid';
+import { Link } from "react-router-dom";
 
 
 const RadioSection = () => {
@@ -18,7 +19,7 @@ const RadioSection = () => {
         <div className="col-sm-12 d-md-flex m-0 p-0 justify-content-between align-items-start px-md-3 py-md-3">
           <div className="imgWrapper"><img src={latestRadio} alt="news"key={uuid.v4()}/></div>
           <div style={{zIndex:2}}>
-            <a className="moreButton" href="#"key={uuid.v4()}>More Radio >>></a>
+            <Link to={'/radio'} className="moreButton">More Radio >>></Link>
           </div>
         </div>
         <div className="col align-self-center ">

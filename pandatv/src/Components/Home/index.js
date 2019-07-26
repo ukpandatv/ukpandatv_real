@@ -28,6 +28,7 @@ class Home extends Component {
           "author": "Administrator"
         }
       ],
+      "isVideoClicked": true,
     }
   }
 
@@ -70,8 +71,6 @@ class Home extends Component {
           <Overlay className="row overLay">
             <div className="col-sm-4 pl-0 sideBanner">
             <Link className="bannerStyle" to={'/radio'}>Latest Radio</Link>
-
-              {/* <span className="bannerStyle">Latest Radio</span> */}
             </div>
             <div className="pageTitle text-center col-sm-4">Panda TV</div>
             <div className="col-md-4 d-flex justify-content-end align-items-end rightToBottom">

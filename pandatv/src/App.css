@@ -1,8 +1,21 @@
 /* media queries */
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* iphone 5-s */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #nav_bar {font-size: 12px;}
+    
+  }
+/* ----------- iPhone 5, 5S, 5C and 5SE,6,7,8,X generic ----------- */
 
 /* Portrait and Landscape */
+
+
+
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 812px)
@@ -23,8 +36,9 @@
     footer .row{font-size: 13px;margin:0;padding:0}
     .footerIcon {width: 20px}
     .facebookLogo {width: 10px}
-    #navbar {font-size: 13px}
+    #nav_bar {font-size: 13px}
     .contactBg{background-position-x: right;}
+    
     
 }
 

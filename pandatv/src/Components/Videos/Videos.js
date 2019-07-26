@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import uuid from 'uuid';
-
+import pandaPoster from '../../Assets/icons/pandaPoster.png';
 class Videos extends Component {
   constructor(props) {
     super(props)
@@ -10,10 +10,9 @@ class Videos extends Component {
       "isLoading" : true,
       "error" : "",
       "categories": ["food","travel","living","europe","london","china"],
-      "isVideoBg": false,
-
+      "isVideoClicked": false,
     }
-    this.API_KEY = process.env.REACT_APP_WEATHER_API_KEY
+    this.API_KEY = process.env.API_KEY
 
   }
   componentDidMount(){
@@ -21,14 +20,14 @@ class Videos extends Component {
   }
   callVideos = () => {
     // save 20 items in state
-    fetch(`http://chino.ibasezero.com:47128/api/get/video/1${this.API_KEY}`,)
+    fetch('https://jsonplaceholder.typicode.com/photos')
       .then(response => response.json())
       .then(data => {this.setState({videos : data.slice(0,20), isLoading: false })})
       .catch(error => this.setState({error,isLoading: false}))
     }
 
-
   render() {
+    console.log()
     const FullHeightCon = styled.div `
       width: 100vw;
       height: 100vh;
@@ -58,17 +57,17 @@ class Videos extends Component {
             <div className="collection d-flex row p-3">
               { this.state.videos.map((video,i) => {
                   return (
-                    <div className="col-md-4" key={uuid.v4()}>
+                    <div className="col-md-4" key={uuid.v4()} >
                       <div className="card m-2">
-                        <div className="card-image">
+                        <div className="card-image" >
                           <div className="embed-responsive embed-responsive-16by9">
-                            <video controls poster={video.thumbnailUrl} type="video/mp4">
-                              <source src={video.thumbnailUrl} key={uuid.v4()} type="video/ogg"></source>
+                            <video controls poster={video.thumbnailUrl} type="video/mp4" poster={pandaPoster}>
+                              <source src={video.thumbnailUrl} key={uuid.v4()} type="video/ogg" ></source>
                             </video>
                             {/* <iframe width={"560" }height={"315"}src={video.thumbnailUrl}frameBorder="0"allowfullscreen></iframe> */}
                           </div>
                         </div>
-                        <div className="card-content">
+                        <div className="card-content" onClick={this.props.isVideoClicked}>
                           <div className="card-title text-center">
                             <h5 className="pt-2 tomatoText">{video.title.slice(0,20)}</h5>
                             <p className="smallClass tomatoText">Not sure about this content</p>

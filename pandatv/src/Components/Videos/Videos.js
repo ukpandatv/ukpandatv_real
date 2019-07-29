@@ -19,12 +19,21 @@ class Videos extends Component {
     this.callVideos();
   }
   callVideos = () => {
-    // save 20 items in state
-    fetch('https://jsonplaceholder.typicode.com/photos')
-      .then(response => response.json())
-      .then(data => {this.setState({videos : data.slice(0,20), isLoading: false })})
-      .catch(error => this.setState({error,isLoading: false}))
-    }
+    fetch('http://chino.ibasezero.com:47128/api/get/video/',{
+      method: 'GET',
+      headers: new Headers({
+        'Content-Type': 'text/plain',
+        apikey: ' be741c63-69b3-4c62-a209-526301e638ff',
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);this.setState({
+        videos: data.Data,})
+      })
+    .catch(error => this.setState({error,isLoading: false}))
+  }
+
 
   render() {
     console.log()

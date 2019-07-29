@@ -7,6 +7,7 @@ import Navigation from './Components/Navbar.js';
 import Videos from './Components/Videos/Videos.js';
 import Radio from './Components/Radio/Radio.js';
 import News from './Components/News/News.js';
+import Player from './Components/player.js';
 import './App.css';
 // import ReactPageScroller from 'react-page-scroller';
 // Multi language solution. Chinese translation required.
@@ -17,6 +18,7 @@ export default class App extends Component {
     super(props)
     this.state = {
       "isScrolling" : false,
+      "isVideoClicked": true,
     }
   }
   componentDidMount() {
@@ -42,9 +44,10 @@ export default class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/Contact' component={Contact} />
-              <Route path='/Videos' render={props => <Videos {...props} isVideoClicked={this.clickHandler}></Videos> } />
+            <Route path='/Videos' render={props => <Videos {...props} isVideoClicked={this.clickHandler}></Videos> } />
             <Route path='/Radio' component={Radio} />
             <Route path='/News' component={News} />
+            <Route path='/Player' component={Player} />
           </Switch>
         </div>
       </Router>

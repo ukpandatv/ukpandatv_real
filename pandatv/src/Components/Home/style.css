@@ -185,6 +185,7 @@ outline: solid #f00 1px !important;} */
   -moz-box-shadow: 8px 9px 5px -8px rgba(145,145,145,1);
   box-shadow: 8px 9px 5px -8px rgba(145,145,145,1);
 }
+.cardBlur {box-shadow: 0 0 4px 1px #00000075;}
 .contactCard:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -249,4 +250,42 @@ footer {
 }
 .hideLogo {
   display: none;
+}
+.dateClass{
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-right: 10px;
+  float: right;
+  margin: 0;
+  padding-bottom: 0;
+}
+.categoryClass {
+  text-transform:capitalize;
+  font-size: 10px;
+  font-weight: 700;
+  padding-left: 10px;
+  float: left;
+  margin: 0;
+  padding-bottom: 0;
+}
+.socialMediaBox {
+  width:  300px;
+  height: 100px;
+  background-color: #FE4A49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0px #000000c9;
+}
+.footerIcon.facebookLogo {
+  width: 15px;
+}
+.social {
+  color: white;
+}
+.social:hover {
+  color: black;
 }

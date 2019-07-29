@@ -17,13 +17,14 @@ class Videos extends Component {
   }
   componentDidMount(){
     this.callVideos();
+    console.log(this.state.videos)
   }
   callVideos = () => {
     fetch('http://chino.ibasezero.com:47128/api/get/video/',{
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'text/plain',
-        apikey: ' be741c63-69b3-4c62-a209-526301e638ff',
+        apikey: 'be741c63-69b3-4c62-a209-526301e638ff',
       })
     })
     .then(response => response.json())
@@ -67,19 +68,21 @@ class Videos extends Component {
               { this.state.videos.map((video,i) => {
                   return (
                     <div className="col-md-4" key={uuid.v4()} >
-                      <div className="card m-2">
+                      <div className="card m-2 cardBlur">
                         <div className="card-image" >
                           <div className="embed-responsive embed-responsive-16by9">
-                            <video controls poster={video.thumbnailUrl} type="video/mp4" poster={pandaPoster}>
-                              <source src={video.thumbnailUrl} key={uuid.v4()} type="video/ogg" ></source>
+                            <video controls poster={video.thumbnailUrl} type="video/mp4">
+                              <source src={video.url} key={uuid.v4()} type="video/ogg" ></source>
                             </video>
-                            {/* <iframe width={"560" }height={"315"}src={video.thumbnailUrl}frameBorder="0"allowfullscreen></iframe> */}
+                            {/* <iframe width={"560" }height={"315"}src={video.url}frameBorder="0"allowfullscreen></iframe> */}
                           </div>
                         </div>
                         <div className="card-content" onClick={this.props.isVideoClicked}>
                           <div className="card-title text-center">
                             <h5 className="pt-2 tomatoText">{video.title.slice(0,20)}</h5>
                             <p className="smallClass tomatoText">Not sure about this content</p>
+                            <p className="categoryClass">{video.category}</p>
+                            <p className="dateClass">{`${new Date(video.createdAt).toUTCString()}`}</p>
                           </div>
                         </div>
                       </div>

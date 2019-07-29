@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="tomatoBg"style={{"fontHeight":"70px"}}>
-      <div className="row m-0 p-0 h-100">
+      <div className="row m-0 p-0 h-100 m-0">
         <div className="col-sm-5 justify-content-around d-flex align-items-center">
           <a className="text-white termsAndConditions" href="€">Terms and Conditions</a>
           <a className="text-white" href="€">Privacy Policy</a>
